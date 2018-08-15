@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>도미노피자</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+<style>
+	#wrap{width:100%:}
+		/*hdwrap css*/
+		#hdwrap{height:85px; background:#0077af; margin-bottom:18px;}
+			#header{width:950px; margin:0 auto;}/*상단바 글씨 들어갈 범위 잡기*/
+				h1{float:left;}
+				#gnb{float:left;}
+				#gnb>li{float:left; margin-top:37px; font-size:16px; margin-left:50px; font-weight:550;}
+				#gnb>li>a{color:#fff;}
+				.yellow{color:#FF0 !important;}	/*안들어가는 경우도 있으니 !important를 써주면 적용이 된다.*/	
+				
+				#util_wrap{float:right;}
+					.util{text-align:right; margin-right:15px;}/*글자정렬*/
+					.util>li{display:inline-block; margin:0 5px; line-height:30px; font-size:11px; font-weight:500;}
+					.util>li>a{color:#fff;}					
+								
+		/*container css*/
+		#container{width:950px; margin:0 auto;}
+			.contents1{width:950px; height:550px; border:1px solid #ccc;}/*양옆 테두리값 고려해서 948px*/
+			.contents1>div{float:left; height:550px; padding-top:14px; border-right:1px solid #ccc; box-sizing:border-box;}
+			.contents1>div:last-child{border-right:0;}
+			.order_box{width:230px; text-align:center;}
+			.banner{width:460px; text-align:center;}
+			.sns{width:258px;}
+			.sbanner{width:227px; margin:0 auto; text-align:center; border-bottom:1px solid #ccc; padding-bottom:14px;} 
+			.blog, .twi, .face{font-size:10px; width:227px; margin:0 auto; text-align:center; border-bottom:1px solid #ccc; margin-top:14px;} 
+			.tit{margin-bottom:7px;}
+			.text{margin-bottom:18px; text-indent:5px;}/*글자 들여쓰기 'text-indent'*/
+			.contents2{height:72px; margin-top:26px; margin-left:15px; text-align:center;}
+			
+		/*footer css*/
+		#footer{width:950px; margin:0 auto; margin:26px auto; text-align:center;}
+		
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+    	<div id="hdwrap">
+        
+        	<div id="header">
+            	<h1><a href="index.html"><img src="img/logo.gif" alt="Domino's"></a></h1><!--로고-->
+                
+                <ul id="gnb">
+                	<li><a href="#">메뉴</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">할인</a></li>
+                    <li><a href="#" class="yellow">매장찾기</a></li>
+                </ul><!--메인메뉴-->
+                
+                <div id="util_wrap">
+                	<ul class="util">
+                    	<li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                    </ul><!--id하든class하든 상관없음 헷갈리면 class! id로만 안하면 됨-->
+                    <div class="online"><a href="#"><img src="img/top_online.gif" alt="인터넷 주문하기"></a></a></div><!--상단 이미지-->
+                </div><!--유틸-->
+            </div><!--header 글자들이 들어갈 영역-->
+            
+        </div><!--hdwrap-->
+        <div id="container">
+        	<div class="contents1"><!--컨텐츠1-->
+            	<div class="order_box"><a href="#"><img src="img/left_menu.png" alt="주문" usemap="#Map">
+                <map name="Map">
+                            <area shape="rect" coords="-2,1,201,78" href="#" alt="배달주문">
+                            <area shape="rect" coords="3,86,200,161" href="#" alt="방문포장주문">
+                            <area shape="rect" coords="1,171,201,248" href="#" alt="선물하기">
+                            <area shape="rect" coords="2,259,200,334" href="#" alt="">
+                            <area shape="rect" coords="0,345,101,367" href="#" alt="인터넷주문안내">
+                    <area shape="rect" coords="103,345,199,366" href="#" alt="상품권안내">
+                    <area shape="rect" coords="2,369,200,449" href="#" alt="어메이징 이벤트">
+                    <area shape="rect" coords="2,449,199,521" href="#" alt="매니아 혜택">
+                </map>
+            	</a></div><!--주문관련내용-->
+                <div class="banner"><a href="#"><img src="img/banner.jpg" alt="배너" usemap="#Map2">
+                        <map name="Map2">
+                            <area shape="circle" coords="59,475,35" href="#" alt="자세히보기">
+                        </map>
+                </a></div><!--배너-->
+                <div class="sns">
+                	<div class="sbanner">
+                    	<div><a href="img/s_banner.jpg"><img src="img/s_banner.jpg" alt="사이드디쉬"></a></div>
+                    </div>
+                    <ul class="blog">
+                    	<li class="tit"><a href="#"><img src="img/blog_title.png" alt="블로그"></a></li>
+                        <li class="text"><a href="#"><도미노피자 50% 할인! 신제품 사이드디></a></li>
+                    </ul>
+                    <ul class="twi">
+                    	<li class="tit"><a href="#"><img src="img/twitter_title.png" alt="트위터"></a></li>
+                        <li class="text"><a href="#"><[도미노 요리사전]브라질 정통 바비큐..></a></li>
+                    </ul>
+                    <ul class="face">
+                    	<li class="tit"><a href="#"><img src="img/facebook_title.png" alt="페이스북"></a></li>
+                        <li class="text"><a href="#"><[이벤트]브슈하스코 치즈롤 피자의 토핑..></a></li>
+                    </ul>
+                </div><!--sns-->
+            </div>
+            
+            <div class="contents2"><a href="#"><img src="img/main_bottom.png" alt="기타" usemap="#Map3">
+                    <map name="Map3">
+                        <area shape="rect" coords="0,1,209,72" href="#" alt="회사소개">
+                        <area shape="rect" coords="221,4,451,71" href="#" alt="사회공헌활동">
+                        <area shape="rect" coords="470,1,668,72" href="#" alt="도미노피자 온라인서비스">
+                        <area shape="rect" coords="687,2,895,72" href="#" alt="뉴스">
+                    </map>
+            </a></div>            
+        </div><!--container-->
+        <div id="footer"><img src="img/footer.png" alt="개인정보취급방침" usemap="#Map4">
+            <map name="Map4">
+                <area shape="rect" coords="2,3,39,18" href="#" alt="&lt;empty&gt;개">
+                <area shape="rect" coords="47,3,103,19" href="#" alt="가맹점모집">
+                <area shape="rect" coords="107,3,148,18" href="#" alt="인재채용">
+                <area shape="rect" coords="155,3,196,19" href="#" alt="NEWS">
+                <area shape="rect" coords="201,5,269,18" href="#" alt="자주 묻는 질문">
+                <area shape="rect" coords="278,3,354,19" href="#" alt="개인정보취급방침">
+                <area shape="rect" coords="361,5,401,22" href="#" alt="이용약관">
+                <area shape="rect" coords="415,3,454,17" href="#" alt="사이트맵">
+                <area shape="rect" coords="478,4,541,22" href="#" alt="온라인 신문고">
+                <area shape="rect" coords="557,5,627,19" href="#" alt="패밀리사이트">
+            </map>
+        </div><!--footer-->    
+    </div><!--wrap-->
+</body>
+</html>

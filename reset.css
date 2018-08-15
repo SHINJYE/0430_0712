@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+html,body{min-width:1280px;}/*이미지가 중간에 끊기지 않게하기 위함*/
+
+
+*{margin:0; padding:0; border:0; vertical-align:top;}
+
+body{font-family: 'Nanum Gothic', sans-serif, "맑은 고딕","돋움"; font-size:100%; font-weight:normal; font-size:12px; color:#333;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal; font-size:12px; color:#333;}
+
+ul,ol,dl,li,dt,dd{list-style:none;}
+a{color:#333; text-decoration:none;}
+

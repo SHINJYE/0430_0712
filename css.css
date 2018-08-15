@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+*{margin:0; padding:0; border:0; vertical-align:top;}
+
+html,body{min-width:1000px;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Nanum Gothic', sans-serif; font-size:100%; font-weight:normal; font-size:12px; color:#333;}
+
+ul,ol,dl,li,dt,dd{list-style:none;}
+a{color:#333; text-decoration:none;}
+
